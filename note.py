@@ -2,7 +2,7 @@ import tkinter as tk
 
 from tkutils import center_window
 from const import *
-
+import menu
 
 def quick_note(path):
     window = tk.Tk()
@@ -25,15 +25,13 @@ def quick_note(path):
         list_file = open(path, "a")
         list_file.write(entered_text + "\n")
         list_file.close()
+        menu.main_menu(path)
 
     def on_escape_pressed(event):
         window.destroy()
-
-    def on_menu_key_pressed(event):
-        print("yeet")
+        menu.main_menu(path)
 
     entry.bind('<Return>', on_enter_pressed)
     entry.bind('<Escape>', on_escape_pressed)
-    entry.bind('<Control-m>', on_menu_key_pressed)
 
     window.mainloop()
