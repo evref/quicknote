@@ -7,12 +7,12 @@ But it should in theory still work on Windows and Mac based systems as they
 are compatible with Python's tkinter. 
 
 To launch the program run `python3 <some_path>/quicknote/main.py` in a 
-terminal, where `python3` should be in PATH. 
+terminal, where `python3` should be your Python installation in PATH. 
 
 The program can be executed in two ways. Either begining in `note mode` or 
 `menu mode`. To enter `menu_mode` pass the `-m` flag when running the program.
 
-### Keybinds
+### Program Keybinds
 | Mode | Keybind | Action |
 ---------------------------
 | Menu | `<Escape>`, `q` | Exit |
