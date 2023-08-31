@@ -21,17 +21,23 @@ def quick_note(path):
     def on_enter_pressed(event):
         entered_text = entry.get()
         window.destroy()
+        if len(entered_text) <= 0:
+            return
 
         list_file = open(path, "a")
         list_file.write(entered_text + "\n")
         list_file.close()
-        menu.main_menu(path)
 
     def on_escape_pressed(event):
+        window.destroy()
+
+    def on_menu_pressed(event):
         window.destroy()
         menu.main_menu(path)
 
     entry.bind('<Return>', on_enter_pressed)
     entry.bind('<Escape>', on_escape_pressed)
+    entry.bind('q', on_escape_pressed)
+    entry.bind('<Control-m>', on_menu_pressed)
 
     window.mainloop()
