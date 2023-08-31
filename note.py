@@ -37,6 +37,7 @@ def quick_note(path):
 
     entry.bind('<Return>', on_enter_pressed)
     entry.bind('<Escape>', on_escape_pressed)
+    entry.bind('q', on_escape_pressed)
     entry.bind('<Control-m>', on_menu_pressed)
 
     window.mainloop()
