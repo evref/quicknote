@@ -14,7 +14,7 @@ The program can be executed in two ways. Either begining in `note mode` or
 
 ### Program Keybinds
 | Mode | Keybind | Action |
----------------------------
+|------|---------|--------|
 | Menu | `<Escape>`, `q` | Exit |
 | Menu | `<Return>` | Exit and save |
 | Menu | `j` | Move down |
@@ -25,7 +25,6 @@ The program can be executed in two ways. Either begining in `note mode` or
 | Note | `<Escape>`, `q` | Exit |
 | Note | `<Return>` | Exit and save |
 | Note | `<Control-m>` | Open menu mode |
---------------------------------------
 
 
 ## Requirements
