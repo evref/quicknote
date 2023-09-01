@@ -8,9 +8,11 @@ def quick_note(path):
     window = tk.Tk()
     
     window.title("Quicknote")
+    window.config(bg=BG_GREY)
     entry = tk.Entry(
         fg=FG_WHITE, 
         bg=BG_GREY, 
+        insertbackground=FG_WHITE,
         font=("Consolas", 40),
         width=40)
     entry.pack()
