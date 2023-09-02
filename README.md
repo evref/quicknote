@@ -17,8 +17,8 @@ The program can be executed in two ways. Either begining in `note mode` or
 |------|---------|--------|
 | Menu | `<Escape>`, `q` | Exit |
 | Menu | `<Return>` | Exit and save |
-| Menu | `j` | Move down |
-| Menu | `k` | Move up |
+| Menu | `<Down>`, `j` | Move down |
+| Menu | `<Up>`, `k` | Move up |
 | Menu | `d` | Mark for removal |
 | Menu | `n` | Open note mode |
 | Menu | `y` | Copy the current row |
